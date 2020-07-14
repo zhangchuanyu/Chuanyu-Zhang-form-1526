@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin-top: 10%;
+	text-align: center;
+	background-color: #F5F5F5;
+	}
+	
+label{
+	font-family: 'Helvetica Neue', Sans-Serif;
+	font-size: 1rem;
+}
+
+legend{
+	font-family: Helvetica, Sans-Serif;
+	font-size: 2rem;
+}
+
+p{
+	font-family: Helvetica, Sans-Serif;
+	font-size: 1rem;
+	text-align: left;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+form{
+	text-align: center;
+	max-width: 50rem;
+	margin: auto;
+	background-color: #F5F5F5;	
+}
+
+/*THE legend*/
+legend{
+	margin-top:-50px;
+	padding:30px 20px 30px 20px;	
+	margin-left:4%;
+	width: auto;
+	border-style: solid;
+	text-align:center;
+	background-color: #F5F5F5;
+	position: absolute;
+}
+
+/*THE CONTENT*/
+
+fieldset>div:first-child{
+	display: inline-block;
+}
+
+div:nth-child(2){
+	margin-top: 60px;
+	margin-left: 5%;
+	display: inline-block;
+}
+	
+div:nth-child(3){
+	margin-top: 40px;
+	display: block;
+}
+
+div:nth-child(4){
+	display: block;
+	margin-top: 20px;
+}
+
+fieldset{
+	padding: 30px;
+	height: 400px;
+	background-color: #DDD;
+	display: inline-block;	
+}
+
+fieldset > div{
+	position: realtive;
+}
+
+label {
+	margin-bottom: 10px;
+	display: block;
+	text-align:left;
+}
+
+#fullname{
+	width: 330px;
+	height: 30px;
+}
+
+#email{
+	width: 330px;
+	height: 30px;
+}
+
+textarea{
+	height: 60px;
+	width: 700px;
+}
+
+input[type="button" i]{
+	text-align: center;
+	color: white;
+	background-color: #6495ED;
+ 	padding: 10px 10px 10px 10px;
+ 	text-decoration: none;
+  	margin-bottom: 15px;
+  	width: 120px;
+  	margin-right: 85%;
+}
+
+
+/*Smart-phone*/
+@media screen and (max-device-width:25rem) {	
+	
+	label,legend{
+	font-size: 1rem;
+	}
+
+	p{
+	font-size: 1rem;
+	padding-left: 15%;
+	padding-right: 15%;
+	} 
+	
+	input:nth-child(3){
+		width: auto;
+		height:auto;	
+	}
+	
+	form{
+	height: 100%;
+	width:100%;
+
+	}
+	
+	legend{
+	margin-top:-35px;
+	padding:20px 15px;	
+	margin-left:2%;
+	width: auto;
+	border-style: solid;
+	text-align:center;
+	background-color: #F5F5F5;
+	position: absolute;
+}
+	
+	fieldset>div:first-child{
+		display: block;
+		margin-top: 50px;
+	}
+	
+	fieldset>div:nth-child(2){
+		margin-top: 20px;
+		margin-left: 0px;
+		display: block;
+	}
+
+	fieldset>div:nth-child(3){
+		margin-top: 20px;
+		display: block;
+	}
+	
+	fieldset>div:nth-child(4){
+		display: block;
+	}
+		
+	fieldset{
+	padding: 15px;
+	width: 100%;	
+	height: 480px;
+	background-color: #DDD;
+	display: inline-block;	
+	}
+		
+	label {
+		margin-top: 10px;
+		margin-bottom: 8px;
+		display: block;
+	}
+	
+	#fullname{
+		width: 100%;
+		height: 40px;
+	}
+	
+	#email{
+		width: 100%;
+		height: 40px;
+	}
+	
+	textarea{
+		height: 80px;
+		width: 100%;
+	}
+
+	input[type="submit" i]{
+	margin-top: 25px;
+	text-align: center;
+	color: white;
+	background-color: #6495ED;
+ 	padding: 10px 10px 10px 10px;
+ 	text-decoration: none;
+  	margin-bottom: 25px;
+  	width: 100%;
+}
+
+/*Tablet*/
+@media screen and (max-device-width:40rem) {
+	form{
+	max-width:40rem;
+	}	
+}
